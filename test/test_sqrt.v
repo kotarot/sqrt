@@ -57,6 +57,12 @@ module SQRT_TB;
 		// 30クロック周期待機
 		#(T_CLK*30)
 
+		$display("[TEST 1]");
+		$display("Input:  0000010000000000");
+		$display("Expect: 0000001000000000");
+		$display("Output: %b", DATA_OUT);
+		$display("\n");
+
 
 		// ================================
 		// 入力信号と回路の初期化
@@ -80,6 +86,12 @@ module SQRT_TB;
 		// 30クロック周期待機
 		#(T_CLK*30)
 
+		$display("[TEST 2]");
+		$display("Input:  0001111000000000");
+		$display("Expect: 0000010101111010");
+		$display("Output: %b", DATA_OUT);
+		$display("\n");
+
 
 		// ================================
 		// 入力信号と回路の初期化
@@ -100,6 +112,13 @@ module SQRT_TB;
 		DATA_IN <= 16'b0110010000000000;
 		// 30クロック周期待機
 		#(T_CLK*30)
+
+		$display("[TEST 3]");
+		$display("Input:  0110010000000000");
+		$display("Expect: 0000101000000000");
+		$display("Output: %b", DATA_OUT);
+		$display("\n");
+
 
 		$finish;
 	end
